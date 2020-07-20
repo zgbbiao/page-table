@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-02 15:57:41
- * @LastEditTime: 2020-04-17 11:07:44
+ * @LastEditTime: 2020-07-20 16:41:04
  * @LastEditors: Please set LastEditors
 
 ## props:
@@ -777,7 +777,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 .pageTable-wrapper-wrapper {
   background: #fff;
   border-radius: 4px;
@@ -785,28 +785,23 @@ export default {
 }
 .filter-wraper,
 .opera-wrapper {
-  // margin-bottom: 24px;
 }
-
 .rightBtns {
   float: right;
-  &.btn-group {
-    &:not(:last-child) {
+}
+.rightBtns.btn-group:not(:last-child){
       margin-left: 20px;
     }
-  }
-}
 .leftBtns {
   float: left;
   padding-top: 2.5px;
-  &.btn-group {
+  }
+.leftBtns.btn-group{
     margin: 0px !important;
-    // margin-left: 4px !important;
-    &:not(:first-child) {
+}
+.leftBtns.btn-group:not(:first-child){
       margin-left: 16px !important;
     }
-  }
-}
 
 .pagination-wrapper {
   padding: 20px;
@@ -824,51 +819,34 @@ export default {
 .components-input-demo-presuffix .anticon-close-circle:active {
   color: #666;
 }
-.ant-input-affix-wrapper {
-  .anticon-close-circle {
-    svg {
+.ant-input-affix-wrapper .anticon-close-circle svg{
       color: #ccc;
-    }
-  }
 }
 </style>
-<style lang="scss">
-.ant-form-vertical {
-  .form-item-align {
+<style >
+
+.ant-form-vertical .form-item-align {
     vertical-align: middle;
     display: flex;
     align-items: center;
-    .ant-form-item-label {
+  }
+.ant-form-vertical .form-item-align  .ant-form-item-label {
       padding: 0 !important;
     }
-  }
-}
 .form-item-wrapper {
   display: flex;
-  > label {
+}
+.form-item-wrapper > label {
     padding-right: 16px;
   }
-  > div {
+.form-item-wrapper > div {
     flex: 1;
-  }
 }
-.CommonPageTable {
-  //
-  &__wrapper {
-    &--tooltip {
-      .ant-tooltip-inner {
+.CommonPageTable__wrapper--tooltip .ant-tooltip-inner {
         background-color: #fff;
         color: #666;
       }
-      .ant-tooltip-arrow {
+.CommonPageTable__wrapper--tooltip .ant-tooltip-arrow {
         border-top-color: #fff;
       }
-    }
-  }
-}
-// .ant-table-row-level-1 {
-//   td {
-//     padding-left: 50px !important;
-//   }
-// }
 </style>

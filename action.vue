@@ -83,23 +83,23 @@ export default {
       ellipssIsActive: false, // 省略是否处于active状态
       operates: {},
       icons: {
-        copy: require('./assets/images/copy.png'),
-        use: require('./assets/images/use.png'),
-        delete: require('./assets/images/delete.png'),
-        disable: require('./assets/images/disable.png'), // 停用
-        enable: require('./assets/images/enable.png'), // 启用
-        edit: require('./assets/images/edit.png'),
-        editActive: require('./assets/images/editActive.png'),
-        ellipsis: require('./assets/images/ellipsis.png'),
-        ellipsisActive: require('./assets/images/ellipsisActive.png'),
-        publish: require('./assets/images/publish.png'),
-        publishActive: require('./assets/images/publishActive.png'),
-        usualDelete: require('./assets/images/usualDelete.png'),
-        usualDeleteActive: require('./assets/images/usualDeleteActive.png'),
-        customize: require('./assets/images/customize.png'),
-        customizeActive: require('./assets/images/customizeActive.png'),
-        view: require('./assets/images/view.png'),
-        viewActive: require('./assets/images/viewActive.png')
+        copy: require('./images/copy.png'),
+        use: require('./images/use.png'),
+        delete: require('./images/delete.png'),
+        disable: require('./images/disable.png'), // 停用
+        enable: require('./images/enable.png'), // 启用
+        edit: require('./images/edit.png'),
+        editActive: require('./images/editActive.png'),
+        ellipsis: require('./images/ellipsis.png'),
+        ellipsisActive: require('./images/ellipsisActive.png'),
+        publish: require('./images/publish.png'),
+        publishActive: require('./images/publishActive.png'),
+        usualDelete: require('./images/usualDelete.png'),
+        usualDeleteActive: require('./images/usualDeleteActive.png'),
+        customize: require('./images/customize.png'),
+        customizeActive: require('./images/customizeActive.png'),
+        view: require('./images/view.png'),
+        viewActive: require('./images/viewActive.png')
       }
     }
   },
