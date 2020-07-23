@@ -4,7 +4,7 @@
       v-for="(item, index) in operates.slice(0, sliceNum)"
       :key="index"
       class="operate-item"
-      @click.stop="item.click(scope)"
+      @click.stop="handleClick(item)"
     >
       <a-tooltip placement="bottomLeft" :auto-adjust-overflow="true">
         <template slot="title">
@@ -30,7 +30,7 @@
             v-for="(item, index) in operates.slice(sliceNum)"
             :key="index"
             class="ellipsis-item"
-            @click.stop="item.click(scope)"
+            @click.stop="handleClick(item)"
           >
             <span>{{ item.text }}</span>
           </div>
@@ -132,6 +132,9 @@ export default {
         ''
       )
       this.operates[index].iconName = iconName
+    },
+    handleClick(item) {
+      this.$emit('click', item, this.scope)
     }
   }
 }
